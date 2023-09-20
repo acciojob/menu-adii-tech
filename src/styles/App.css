@@ -10,3 +10,12 @@ button{
     justify-content: center;
     align-items: center;
 }
+.food-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+.food-card-item{
+    border: 1px solid black;
+}
