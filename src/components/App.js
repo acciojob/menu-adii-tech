@@ -85,9 +85,12 @@ const App=()=>{
             <h1>Our Menu</h1>
             <div className="categories">
                 <button className="btn" onClick={()=>setFoodItem(list)}>All</button>
-                <button className="btn" id="filter-btn-3" onClick={()=>getFoodItem("breakfast")}>Breakfast</button>
-                <button className="btn" id="filter-btn-2" onClick={()=>getFoodItem("lunch")}>Lunch</button>
-                <button className="btn" id="filter-btn-1" onClick={()=>getFoodItem("shakes")}>Shakes</button>
+                <button className="btn" id="filter-btn-3" onClick={()=>getFoodItem("breakfast")}
+                data-test-id="menu-item-breakfast">Breakfast</button>
+                <button className="btn" id="filter-btn-2" onClick={()=>getFoodItem("lunch")}
+                data-test-id="menu-item-lunch">Lunch</button>
+                <button className="btn" id="filter-btn-1" onClick={()=>getFoodItem("shakes")} 
+                data-test-id="menu-item-shakes">Shakes</button>
             </div>
           <div className="food-card">
                {
